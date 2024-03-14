@@ -4,4 +4,18 @@ spring:
   config.activate.on-profile: default
   sql.init.schema-locations: classpath:schema-h2.sql
 cds:
-  datasource.auto-config.enabled: false
+  datasource:
+    auto-config.enabled: false
+  security:
+    mock:
+      users:
+        - name: 3749
+          password: handhand
+          roles:
+            - Administrators
+          additional:
+           firstName: yuhang
+           lastName: xiao
+           email: yuhang.xiao@hand-china.com
+        - name: 3750
+          password: handhand
